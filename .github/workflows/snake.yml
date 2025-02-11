@@ -1,0 +1,30 @@
+name: Snake Animation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Generate Snake animation
+        uses: Platane/snk@v2
+        with:
+          github_user: 'josemar-santos'
+          svg_out_path: 'output/github-contribution-grid-snake.svg'
+
+      - name: Commit and push the snake animation
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: 'José dos Santos'
+          author_email: 'josemenezesdossantos90@gmail.com'
+          message: 'Generate Snake animation'
+          add: 'output/github-contribution-grid-snake.svg'
