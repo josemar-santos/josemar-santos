@@ -77,6 +77,6 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/josemar-santos/josemar-santos/output/snake.svg" alt="Snake animation" />
+![Snake animation](https://raw.githubusercontent.com/josemar-santos/josemar-santos/output/github-contribution-grid-snake-dark.svg)
 
 ###
